@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula JavaScript</title>
+</head>
+<body>
+    <header>
+        <h1>Aula JavaScript</h1>
+    </header>
+
+    <p>Hello World</p>
+
+    <button id="botao">Alerta</button>
+
+ <script>
+     var paragrafo = document.querySelector('p');
+     var nova_lista = document.createElement('ul');
+     var novo_li = document.createElement('li');
+     var texto = document.createTextNode('Olá Mundo');
+
+     var novo_li2 = document.createElement('li');
+     var texto2 = document.createTextNode('Olá Mundo de novo');
+
+     novo_li.append(texto);
+     novo_li2.append(texto2);
+
+     nova_lista.append(novo_li);
+     nova_lista.append(novo_li2);
+
+     paragrafo.appendChild(nova_lista);
+
+     botao.onclick = function ( ) {
+    alert ('Você clicou no botão');
+    }
+
+
+ </script>   
+</body>
+</html>
